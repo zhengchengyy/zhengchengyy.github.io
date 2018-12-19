@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>相册</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script>
+//设置图片轮播
+	var curIndex=0;
+	var timeInterval=3000;
+	var arr=new Array();
+	arr[0]="images/slide/s1.jpg";
+	arr[1]="images/slide/s2.jpg";
+	arr[2]="images/slide/s3.jpg";
+	arr[3]="images/slide/s4.jpg";
+	arr[4]="images/slide/s5.jpg";
+	setInterval(changeImg,timeInterval);
+	function changeImg()
+	{
+		var obj=document.getElementById("obj");
+		if (curIndex==arr.length-1) 
+		{
+			curIndex=0;
+		}
+		else
+		{
+			curIndex+=1;
+		}
+		obj.src=arr[curIndex];
+	}
+</script>
+</head>
+<body>
+<div id="header">
+  <div id="logo"><a href="#"><img src="images/cheng.png" width="240" height="52" /></a></div>
+  <div class="header_main">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="article.html">文章</a></li>
+      <li class="li1"><a href="photos.html">相册</a></li>
+      <li><a href="music.html">音乐</a></li>
+      <li><a href="guestbook.html">留言</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="slide"><img id="obj" src="images/slide/s1.jpg" width=1000 height=400 border=0></div>
+<div id="photos_main">
+  <div id="photos" ><iframe src="pho1.html" name="photos" frameborder=0 scrolling=no id="ifrm" width=100% height=100%></iframe></div>
+  <div id="cata">
+    <ul>
+      <li><a href="pho1.html" target="photos">北京</a></li>
+      <li><a href="pho2.html" target="photos">大连</a></li>
+      <li><a href="pho3.html" target="photos">沈阳</a></li>
+      <li><a href="pho4.html" target="photos">南昌</a></li>
+    </ul>
+  </div>
+</div>
+<div id="links">
+  <h1 class="arrow">&nbsp;&nbsp;&nbsp;友情链接</h1>
+  <ul>
+    <li><img src="images/link.png" width="65" height="20" /></li>
+    <li><a href="http://www.sut.edu.cn/" target="_blank">沈阳工业大学</a></li>
+    <li><a href="http://baidu.com" target="_blank">百度</a></li>
+    <li><a href="http://www.google.cn/" target="_blank">谷歌</a></li>
+    <li><a href="http://www.sina.com.cn/" target="_blank">新浪</a></li>
+  </ul>
+</div>
+<div id="footer" style="text-align: center">Copyrights © 2015 Design by DaLong <img src="images/sum.gif" width="50" height="12" /></div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+ <script>
+
+   $(document).ready(function() {
+	//我的名片渐变	   
+	$(window).load(function(){
+		$("#card p").fadeOut("slow",function(){$("#card p").fadeIn(1000)}						
+				);
+				})    
+	//换头像
+    $("#article h2 img").click(function(){
+		$("#article h2 img").attr("src","images/touxiang.jpg");	
+		})
+	//设置背景音效
+	$("#logo").click(function(){
+		$("#header audio").attr("src","musics/bgmusic.mp3");		
+		})
+	$(".li1").mouseover(function(){
+		$("#header audio").attr("src","musics/b.mp3");		
+		})
+	$(".li2").mouseover(function(){
+		$("#header audio").attr("src","musics/c.mp3");		
+		})
+	$(".li3").mouseover(function(){
+		$("#header audio").attr("src","musics/d.mp3");		
+		})
+	$(".li4").mouseover(function(){
+		$("#header audio").attr("src","musics/e.mp3");		
+		})
+	$(".li5").mouseover(function(){
+		$("#header audio").attr("src","musics/f.mp3");		
+		})
+   })
+ 
+</script>
+</head>
+
+<body>
+<div id="header">
+  <div id="logo"><a href="#"><img src="images/cheng.png" width="240" height="52" /></a></div>
+  <div class="header_main">
+    <ul>
+      <li class="li1"><a href="index.html">首页</a>
+      <audio src="" autoplay="true"> </audio></li>
+      <li class="li2"><a href="article.html">文章</a></li>
+      <li class="li3"><a href="photos.html">相册</a></li>
+      <li class="li4"><a href="music.html">音乐</a></li>
+      <li class="li5"><a href="guestbook.html">留言</a></li>
+    </ul>
+  </div>
+</div>
+<div id="mainbody">
+  <div id="info">
+    <div id="card">
+      <h1>我的名片</h1>
+      <p>网名： ولادة جديدة</p>
+      <p>职业：大学生</p>
+      <p>电话：13322496710</p>
+      <p>Email：303247612@qq.com</p>
+      <ul>
+        <li><a href="#"><img src="images/ico1.png" alt="qq好友" onmouseover="this.src='images/ico1_1.png';" onmouseout="this.src='images/ico1.png';" /></a></li>
+        <li><a href="#"><img src="images/ico2.png" alt="朋友圈" onmouseover="this.src='images/ico2_1.png';" onmouseout="this.src='images/ico2.png';" /></a></li>
+        <li><a href="#"><img src="images/ico3.png" alt="新浪微博" onmouseover="this.src='images/ico3_1.png';" onmouseout="this.src='images/ico3.png';" /></a></li>
+        <li><a href="#"><img src="images/ico4.png" alt="腾讯微博" onmouseover="this.src='images/ico4_1.png';" onmouseout="this.src='images/ico4.png';" /></a></li>
+      </ul>
+    </div>
+    <div id="figure"><img class="rotatesimg" src="images/info.jpg"   width="630" height="250"
+     /></div>
+  </div>
+  <div id="resume">
+    <div id="article">
+      <h1 class="arrow">&nbsp;&nbsp;&nbsp;个人资料</h1>
+      <h2><img src="images/touxiang1.jpg" alt="我的头像" width="189" height="241" class="touxiang" /></h2>
+      <p>我的姓是赵钱孙李的那个郑，名是李嘉诚的诚，来自八一起义的地方，江西南昌，现今在沈阳工业大学读书，从南方飘到北方，从鸡腹到鸡脖，真是说不清的远，远，远。。。大三这学期刚开没几天，总是有人问："你大一的吧？"，我惭愧的说大三了。没错，都大三了，怎么还是这么年轻呢！哈哈，废话不多说，还是隆重介绍一下自己，我呢，兴趣爱好挺多，看书唱歌玩游戏，坚持锻炼，这不，前段时间都有腹肌了。平时有空的时候也喜欢做些有意思的事，但做的都不怎么满意，这次终于下定决心做一个可以拿出手的，就算拿不出手，也得拿得出志气！最近大家都在讨论考研还是实习的事，我也有些犹豫，虽说百分之八十考研，可还是感觉想实习，结束自己漫长的学生时代。。。不过，这些只是想法，而已。我发现写这么多才这么一点，比我高中作文还难写啊，对了，我还喜欢旅游，这个国庆特意去了北京，感受帝都之美——人多车多霾多，长城故宫天安门，清华北大圆明园。。。
+        我的梦想是当一名业余歌手，我要努力努力再努力，前进！ </p>
+      <p>My name is Zheng Cheng, from Bayi Uprising, Nanchang, Jiangxi Province, now in Shenyang University of reading, from the South drifted to the north, from chicken abdomen to chicken neck, it is said not clear far, far, far away. Big three this semester just a few days, always someone asked: "you big one? "I am ashamed to say that the big three. Yes, three, how is it so young! Ha ha, nonsense not say, or grand introduce myself, and I hobbies Tingduo, reading, singing and playing the game, insist to take exercise. This does not, some time ago have ABS. Usually nothing also like to make up some of the process, brain cells, some more, kill the little brain. But do not very satisfactory, the finally decided to do a hand out of, even if Nabuchushou, to come up with the ambition! Recently everyone in the discussion section or internship, I have some hesitation, although the eighty percent postgraduate entrance examination, can still feel like an internship, the end of his long student era... But these are just ideas. I found write so versatile, so a little, than my high school composition also difficult to write ah, right, I also like to travel, the National Day specially went to Beijing, feelings haze in Empire -- more than cars, the great wall and Forbidden City Tiananmen, Tsinghua University Beijing Yuanmingyuan. My dream is to be an amateur singer, I want to work hard in the effort, forward!</p>
+    </div>
+    <div id="data">
+      <div id="label">
+        <h1 class="arrow">&nbsp;&nbsp;&nbsp;标签云</h1>
+        <ul>
+          <li class="l1"><a href="#">沈工大</a></li>
+          <li class="l2"><a href="#">软件学院</a></li>
+          <li class="l3"><a href="#">1302班</a></li>
+          <li class="l4"><a href="#">郑诚</a></li>
+          <li class="l5"><a href="#">江西</a></li>
+          <li class="l6"><a href="#">南昌</a></li>
+          <li class="l7"><a href="#">web</a></li>
+          <li class="l8"><a href="#">个人网站</a></li>
+          <li class="l9"><a href="#">大龙</a></li>
+        </ul>
+      </div>
+      <div id="motto">
+        <h1 class="arrow">&nbsp;&nbsp;&nbsp;格言</h1>
+        <p>1、生的磨难是很多的，所以我们不可对于每一件轻微的伤害都过于敏感。在生活磨难面前，精神上的坚强和无动于衷是我们抵抗罪恶和人生意外的最好武器。</p>
+        <p>2、人生并不像火车要通过每个站似的经过每一个生活阶段。人生总是直向前行走，从不留下什么。</p>
+        <p>3、志向不过是记忆的奴隶，生气勃勃地降生，但却很难成长。 </p>
+      </div>
+      <div id="glory">
+        <h1 class="arrow">&nbsp;&nbsp;&nbsp;个人荣誉</h1>
+        <marquee direction="down" width="200" height="300px" onMouseOut="this.start()" onMouseOver="this.stop()" scrollAmount="2" behavior="slide">
+          <p>荣获国家励志奖学金</p>
+          <p>荣获优秀班干部</p>
+          <p>荣获大合唱三等奖</p>
+          <p>荣获广播操三等奖</p>
+          <p>荣获ACM二等奖</p>
+          <p>荣获进步个人奖</p>
+          <p>荣获校三好学生</p>
+          <p>荣获软考中级证书</p>
+          <p>荣获国民好室友奖</p>
+          <p>荣获炉石小天才奖</p>
+        </marquee>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="links">
+  <h1 class="arrow">&nbsp;&nbsp;&nbsp;友情链接</h1>
+  <ul>
+    <li><img src="images/link.png" width="65" height="20" /></li>
+    <li><a href="http://www.sut.edu.cn/" target="_blank">沈阳工业大学</a></li>
+    <li><a href="http://baidu.com" target="_blank">百度</a></li>
+    <li><a href="http://www.google.cn/" target="_blank">谷歌</a></li>
+    <li><a href="http://www.sina.com.cn/" target="_blank">新浪</a></li>
+  </ul>
+</div>
+<!--返回顶部-->
+<script type="text/javascript" src="js/gotop.js"></script>
+<div id="tbox"><a id="gotop" href="javascript:void(0)"></a></div>
+<div id="footer" style="text-align: center">Copyrights © 2015 Design by DaLong <a href="#"><img src="images/sum.gif" width="50" height="12" /></a></div>
+</body>
+</html>

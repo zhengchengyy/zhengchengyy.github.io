@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>音乐</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script>
+//设置下拉菜单
+   $(document).ready(function() {
+	  $(".menu").mouseover(function(){
+		  $(".menu ul").css("display","block");   
+		   })
+	  $(".menu").mouseout(function(){
+		   $(".menu ul").css("display","none");   
+		   })
+//音乐切换
+	  $(".mu1").click(function(){
+		$(".music audio").attr("src","musics/爱与诚.mp3");
+		$(".message dt img").attr("src","images/mu1.jpg");
+		$(".d1").text("歌名：爱与诚");	
+		$(".d2").text("歌手：古巨基");
+		$(".d3").text("专辑：《大雄》");			
+		})
+	  $(".mu2").click(function(){
+		$(".music audio").attr("src","musics/南山南.mp3");
+		$(".message dt img").attr("src","images/mu2.jpg");
+		$(".d1").text("歌名：南山南");	
+		$(".d2").text("歌手：张磊");
+		$(".d3").text("专辑：无");		
+		})
+   })
+   $(window).load(function(){
+	var element = document.getElementById("rotate");
+	var r = 0;
+	var i = 1;
+	function rotate(){
+		r += i;
+		element.style.MozTransform = "rotate(" + r + "deg)";
+		element.style.webkitTransform ="rotate(" + r + "deg)";
+		element.style.msTransform = "rotate(" + r + "deg)";
+		element.style.OTransform = "rotate(" + r + "deg)";
+		element.style.transform = "rotate(" + r + "deg)";
+	}
+	
+	var timer = setInterval(rotate,50);
+	
+	element.onmouseover = function(){
+		clearInterval(timer);
+		timer = null;
+	};
+	
+	element.onmouseout = function(){
+		if(timer)return;
+		timer = setInterval(rotate,30);
+	};
+   })
+</script>
+</head>
+<body>
+<div id="header">
+  <div id="logo"><a href="#"><img src="images/cheng.png" width="240" height="52" /></a></div>
+  <div class="header_main">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="article.html">文章</a></li>
+      <li><a href="photos.html">相册</a></li>
+      <li class="li1"><a href="music.html">音乐</a></li>
+      <li><a href="guestbook.html">留言</a></li>
+    </ul>
+  </div>
+</div>
+<div id="music_main">
+  <div id="control">
+    <div class="search">
+      <form class="searchform" method="get" action="#">
+        <input name="s" type="text" class="text" onfocus="this.value=''" onblur="this.value='爱与诚'" value="爱与诚" size="20" />
+      </form>
+    </div>
+    <div class="message">
+      <dl>
+        <dt><img id="rotate" src="images/mu1.jpg" alt="专辑" /></dt>
+        <dd class="d1">歌名：爱与诚</dd>
+        <dd class="d2">歌手：古巨基</dd>
+        <dd class="d3">专辑：《大雄》</dd>
+        <dd class="d4"><a href="#">添加收藏</a></dd>
+      </dl>
+    </div>
+    <div class="music">
+      <audio src="musics/爱与诚.mp3" controls="controls" autoplay="true"></audio>
+    </div>
+    <div class="menu">
+      <ul>
+          <li class="mu1"><a href="mu1.html" target="lyric">爱与诚</a></li>
+          <li class="mu2"><a href="mu2.html" target="lyric">南山南</a></li>
+          <li class="mu3"><a href="mu3.html" target="lyric">六月的雨</a></li>
+          <li class="mu4"><a href="mu4.html" target="lyric">水手</a></li>
+        </ul>
+    </div>
+  </div>
+  <div id="lyric">
+  <iframe src="mu1.html" name="lyric" frameborder=0 scrolling=no id="ifrm" 
+  width=100% height=100%></iframe>
+  </div>
+</div>
+<div id="links">
+  <h1 class="arrow">&nbsp;&nbsp;&nbsp;友情链接</h1>
+  <ul>
+    <li><img src="images/link.png" width="65" height="20" /></li>
+    <li><a href="http://www.sut.edu.cn/" target="_blank">沈阳工业大学</a></li>
+    <li><a href="http://baidu.com" target="_blank">百度</a></li>
+    <li><a href="http://www.google.cn/" target="_blank">谷歌</a></li>
+    <li><a href="http://www.sina.com.cn/" target="_blank">新浪</a></li>
+  </ul>
+</div>
+<div id="footer" style="text-align: center">Copyrights © 2015 Design by DaLong <a href="#"><img src="images/sum.gif" width="50" height="12" /></a></div>
+</body>
+</html>
