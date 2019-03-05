@@ -833,7 +833,7 @@ a {
 #gotop:hover { opacity: 0.5 }
 
 
-.rotatesimg{-webkit-animation:transform-5 10s ease 500ms alternate none 1;animation:transform-5 2s ease 500ms alternate none 1;
+.rotatesimg{-webkit-animation:transform-5 10s ease 500ms alternate none 1;animation:transform-5 6s ease 500ms alternate none 1;
 }
 @-webkit-keyframes transform-5 { 
 	from{-webkit-transform:perspective(400px) rotateX(90deg);transform:perspective(400px) rotateX(90deg);} 
