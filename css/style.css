@@ -293,7 +293,7 @@ a {
 	height: 100px;
 	margin-right: auto;
 	margin-left: auto;
-	width: 100%;
+	width: auto;
 	border-top-color: #333;
 	border-top-width: 2px;
 	border-top-style: solid;
@@ -314,7 +314,6 @@ a {
 	line-height: 20px;
 }
 
-
 #links ul li a {
 	color: #828181;
 }
@@ -329,7 +328,7 @@ a {
 	background-image: url(../images/header_line.png);
 	background-position: top;
 	background-repeat: repeat-x;
-	padding-top: 0px;
+	padding-top: 10px;
 	padding-right: 0px;
 	padding-bottom: 0px;
 	padding-left: 0px;
@@ -337,7 +336,6 @@ a {
 	background-color: #222;
 	color: #FFF;
 	font-family: "刘梦吟书法行楷简体";
-	float: bottom;
 }
 
 #slide {
