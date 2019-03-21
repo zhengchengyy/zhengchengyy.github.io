@@ -1,5 +1,4 @@
 # zhengchengyy.github.io
 ## This is my personal web!
 
-
-### I finish it in 2015 year. It was a wonderful time！
+2015年，大三上学期，对网页比较感兴趣，于是自学web做的一个个人网站，虽然网站看起来比较简陋的，但是所有的内容都是自己一点点手敲出来的，没有用模板，没有用框架，怀念当时的热情，以后有时间得再完善下！
